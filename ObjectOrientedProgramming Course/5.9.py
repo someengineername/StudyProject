@@ -1,6 +1,5 @@
 def hash_function(obj):
     temp_obj = str(obj)
-
     temp1 = 0
 
     if len(temp_obj) % 2 == 0:

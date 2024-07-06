@@ -24,14 +24,3 @@ class MutableString(UserString):
         temp_value = list(self.data)
         del temp_value[key]
         self.data = ''.join(temp_value)
-
-
-text = 'Beautiful is better than ugly.'
-
-mutablestring = MutableString(text)
-
-del mutablestring[9]
-print(mutablestring)
-
-del mutablestring[-6]
-print(mutablestring)

@@ -24,10 +24,10 @@ class King(ChessPiece):
             [self.conversion_matrix[self.horizontal], self.vertical - 1],
             [self.conversion_matrix[self.horizontal] + 1, self.vertical - 1],
             [self.conversion_matrix[self.horizontal] - 1, self.vertical],
-             [self.conversion_matrix[self.horizontal] + 1, self.vertical],
-             [self.conversion_matrix[self.horizontal] - 1, self.vertical + 1],
-             [self.conversion_matrix[self.horizontal], self.vertical + 1],
-             [self.conversion_matrix[self.horizontal] + 1, self.vertical + 1]
+            [self.conversion_matrix[self.horizontal] + 1, self.vertical],
+            [self.conversion_matrix[self.horizontal] - 1, self.vertical + 1],
+            [self.conversion_matrix[self.horizontal], self.vertical + 1],
+            [self.conversion_matrix[self.horizontal] + 1, self.vertical + 1]
              ]
 
         if ([self.conversion_matrix[char_hor], destination_ver] in possible_moves and

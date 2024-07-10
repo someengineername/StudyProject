@@ -16,10 +16,3 @@ class Circle:
 
     def __repr__(self):
         return f'({self.center.x}, {self.center.y}), r = {self.radius}'
-
-
-point = Point(1, 1)
-circle = Circle(5, point)
-
-print(point)
-print(circle)

@@ -11,16 +11,11 @@ class Card:
 class Deck:
 
     def __init__(self):
-        suit_db = ['♣', '♢', '♡', '♠']
-        rank_db = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        from itertools import product
 
-        self.deck = []
-
-        for suit in suit_db:
-            for rank in rank_db:
-                self.deck.append(Card(suit, rank))
-
-        # print(self.deck)
+        self.deck = [Card(i, j) for i, j in
+                     product(['♣', '♢', '♡', '♠'],
+                             ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'])]
 
     def shuffle(self):
 

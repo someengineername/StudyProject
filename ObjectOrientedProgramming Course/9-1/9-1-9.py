@@ -85,24 +85,3 @@ class TicTacToe:
             # if no winner detected - return None
             else:
                 return 'None'
-
-
-tictactoe = TicTacToe()
-
-tictactoe.mark(1, 1)
-tictactoe.mark(1, 3)
-tictactoe.mark(3, 1)
-tictactoe.mark(2, 1)
-
-print(tictactoe.winner())
-
-tictactoe.mark(3, 2)
-tictactoe.mark(3, 3)
-tictactoe.mark(1, 2)
-tictactoe.mark(2, 2)
-tictactoe.mark(2, 3)
-
-print(tictactoe.winner())
-tictactoe.show()
-tictactoe.mark(2, 2)
-print(tictactoe.winner())

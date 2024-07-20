@@ -3,7 +3,7 @@ import functools
 
 def track_instances(cls):
     old_init = cls.__init__
-    cls.instances = []
+    cls.instance = []
 
     @functools.wraps(old_init)
     def new_init(self, *args, **kwargs):
